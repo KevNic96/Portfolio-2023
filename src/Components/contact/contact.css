@@ -1,0 +1,142 @@
+.container.contact__container{
+    width: 40%;
+    display: grid;
+    grid-template-columns: 40% 85%;
+    justify-content: center;
+    gap: 0;
+}
+
+.contact__options{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 65%;
+}
+
+.contact__option{
+    color: #fff;
+    background: var(--title-color-dark);
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition-duration: 0.3s;
+}
+
+.contact__option:hover{
+    color: var(--title-color-dark);
+    background: transparent;
+    border-color: black;
+}
+
+.message-icon, .wpp-icon{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact__option a{
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.contact__option a:hover{
+    color: var(--title-color-dark);
+} 
+
+
+/* ============= FORM ============= */
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: var(--container-color);
+    border: 3px solid var(--title-color-dark);
+    resize: none;
+}
+
+
+/* ========== BREAKPOINTS ========== */
+/* For large devices */
+@media screen and (max-width:1170px) {
+    .container.contact__container{
+        justify-content: center;
+        width: 88%;
+        display: grid;
+        grid-template-columns: 30% 50%;
+        gap: 5px;
+    }
+  }
+
+
+@media screen and (max-width:992px) {
+    .container.contact__container{
+        justify-content: center;
+        width: 88%;
+        display: grid;
+        grid-template-columns: 30% 50%;
+        gap: 5px;
+    }
+  }
+
+  /* For medium devices */
+
+
+  @media screen and (max-width: 620px){
+    .container.contact__container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        justify-items: center;
+        padding: 0.4rem;
+    }
+
+        input, textarea{
+            justify-items: center;
+            width: 100%;
+            padding: 0.6rem;
+            resize: none;
+            font-size: 14px;
+        }
+
+        textarea{
+            height: 150px;
+        }
+    }
+
+  /* For small devices */
+
+/*   
+  @media screen and (max-width: 375px){
+    .contact__option{
+        padding: 10px;
+    }
+    .contact__option h4{
+        display: none;
+    }
+
+    .contact__option a{
+
+        font-size: 11px;
+    }
+
+    input, textarea{
+        width: 100%;
+        padding: 0.4rem;
+        border-radius: 0.5rem;
+        border: 3px solid var(--title-color-dark);
+        resize: none;
+    }
+
+    textarea{
+        height: 90px;
+    }
+
+  } */

@@ -1,0 +1,108 @@
+.technologies__container{
+    justify-content: center;
+    grid-template-columns: repeat(3,150px);
+    column-gap: 3.5rem;
+    row-gap: 3rem;
+    margin-bottom: var(--mb-2);
+    /* background-color: black; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+h4{
+    color: rgb(134, 133, 133);
+}
+.technology__box{
+    background-color: var(--container-color);
+    border-radius: 1.2rem;
+    text-align: center;
+    padding: 0.5rem 2rem 0 2rem;
+    /* background-color: black; */
+}
+
+/* .technology__box h3{
+    color: #fff;
+} */
+
+.technology__box:hover{
+    transform: scale(1.05);
+    transition-duration: 0.2s;
+}
+
+.html{
+    box-shadow: 0px 6px 0px -1px rgb(247, 141, 3);
+}
+
+.css{
+    box-shadow: 0px 6px 0px -1px rgb(30, 52, 248);
+}
+
+.js{
+    box-shadow: 0px 6px 0px -1px rgb(229, 233, 8);
+}
+
+.reactjs{
+    box-shadow: 0px 6px 0px -1px rgb(11, 205, 219);
+}
+
+.nodejs{
+    box-shadow: 0px 6px 0px -1px rgb(57, 182, 26);
+}
+
+.python{
+    box-shadow: 0px 6px 0px -1px rgb(71, 37, 165);
+}
+
+.boots{
+    box-shadow: 0px 6px 0px -1px rgb(110, 37, 194);
+}
+
+.github{
+    box-shadow: 0px 6px 0px -1px rgb(0, 0, 0);
+}
+
+
+
+.tech__icon{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 1rem;
+}
+
+
+/* ========== BREAKPOINTS ========== */
+/* For large devices */
+@media screen and (max-width: 576px){
+    .technologies__container{
+        justify-content: center;
+        grid-template-columns: repeat(2,150px);
+        gap: 1rem;
+        margin-bottom: var(--mb-1);
+    }
+
+    .technology__box{
+        background-color: var(--container-color);
+        border-radius: 1.2rem;
+        text-align: center;
+        padding: 0.5rem 2rem 0 2rem;
+    }
+
+    .technology__box:hover{
+        transform: scale(1.05);
+        transition-duration: 0.2s;
+    }
+}
+
+  /* For small devices */
+@media screen and (max-width: 350px){
+    .technologies__container{
+        justify-content: center;
+        grid-template-columns: repeat(1,150px);
+        gap: 0.5rem;
+        margin-bottom: var(--mb-1);
+    }
+
+}
+
+
+
